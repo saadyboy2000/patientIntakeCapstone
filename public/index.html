@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dr Forms</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto:400,500,700" rel="stylesheet">
+    <link href="style.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header role="banner">
+        <div class="header-container">
+            <h1>Dr. Forms</h1>
+            <p>Convenient place to find Dr. Forms </p>
+        </div>
+    </header>
+
+    <navigation role="navigation" class="row">
+        <div class="dropdown">
+            <button class="dropbtn"><img src="images/noun_629469_cc.png"><p>&nbsp;&nbsp;Menu</p></button>
+            <div id="myDropdown" class="dropdown-content">
+                <ul>
+                    <li id="nav-create-button" class="nav-button"><img src="images/noun_302005_cc.png">&nbsp;&nbsp;&nbsp;Create New Form</li>
+                    <li id="nav-view-button" class="nav-button"><img src="images/noun_302002_cc.png">&nbsp;&nbsp;&nbsp;View all Forms</li>
+                    <li id="nav-resources-button" class="nav-button"><img src="/images/noun_302004_cc.png">&nbsp;&nbsp;&nbsp;Resources</li>
+                </ul>
+            </div>
+        </div>
+    </navigation>
+
+
+    <section class="start-page row ">
+        <h2>Create a form</h2>
+        <img src="/images/meditation.jpg ">
+        <p>Doctos can create forms to be shared here</p>
+    </section>
+
+    <section id="new-entry" class="hide-display row">
+        <form method="post" id="new-reflection">
+            <fieldset>
+                <legend class="section-header">Create a form</legend>
+                <label>Doctor:</label><br>
+                <input type="text" id="doctor" name="doctor" required><br>
+                <label>Specialty:</label><br>
+                <input type="text" id="specialty" name="specialty" required><br>
+                <label>id:</label><br>
+                 <input type="number" id="id" name="id" required><br>
+                 <label>Questions:</label><br>
+                 <input type = "text" id = "questions" name = "questions" required><br>
+               <!-- <select name="mood" id="mood"><br> 
+                        <option>Happy</option>
+                        <option>Calm</option>
+                        <option>Angry/Frustrated</option>
+                        <option>Anxious</option>
+                        <option>Sad/Upset/Depressed</option>
+                    </select><br>
+                <label>Reflect on it:</label><br>
+                <textarea name="text " id="text " rows="4" cols="50" required></textarea><br>
+                <button type="submit " id="new-submit-button ">Submit</button> -->
+            </fieldset>
+
+        </form>
+    </section>
+
+    <section id="form-container" class="hide-display row">
+        <h1 class="section-header">Forms</h1>
+
+        <div id="reflections">
+        </div>
+    </section>
+
+    <!-- <section id="resources" class="hide-display row">
+        <h1 class="section-header">Resources</h1>
+        <p><b>Call 211 (in U.S. or Canada) for the following services:</b>
+        </p>
+        <ul>
+            <li>Basic human needs resources</li>
+            <li>Physical &#38; mental health resources</li>
+            <li>Work support</li>
+            <li>Support for senior citizens and persons with disabilities</li>
+            <li>Support for children, youth, and families</li>
+        </ul>
+        <p><b>Struggling with anxiety? Visit:</b></p>
+        <a href="http://www.anxietysocialnet.com/ ">Anxiety Social Net</a>
+        <p><b>Struggling with depression? Visit:</b></p>
+        <a href="http://www.dbsalliance.org/site/PageServer?pagename=home ">DBS Alliance</a>
+        <p><b>Don't forget you can always reach out to your friends and family for support!</b></p>
+    </section>
+
+    <footer class="footer">
+        <a href="https://github.com/annalyncs " target="_blank "><img src="social-icons/github-icon-80.png " alt="github icon "></a>&nbsp;
+        <a href="https://www.linkedin.com/in/annalyn-sarmiento/ " target="_blank "><img src="social-icons/linkedin-icon-80.png " alt="linkedin icon "></a>&nbsp;
+        <a href="mailto:annalyn.c.s@gmail.com "><img src="social-icons/mail-icon-80.png " alt="email icon "></a>
+        <p>Image designed by <a href="http://www.freepik.com/free-vector/businessman-character-meditating_1167765.htm ">Freepik</a></p <p>Created by Annalyn Sarmiento</p>
+    </footer> -->
+
+</body>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js " integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin=" anonymous "></script>
+<script type=text/javascript src="client.js "></script>
+
+</html>
+<!--model after this site: https://github.com/annalyncs/self-reflections/tree/master/public from https://www.thinkful.com/project-hunt/node-capstone/new -->
