@@ -35,9 +35,10 @@ describe('Users', function() {
   it('should list users on GET', function(done) {
     chai.request(app)
       .get('/')
-      .end(function(err,res) {
+      .then(function(res) {
         res.should.have.status(200);
         done();
+        return true;
       });
   });
 });
