@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: TrcNyyWXn889W1uvbfrYQVZc0TpEDnLIo0oHBOxh7zKtnuOMJad31IaxBbfLTZejStAAfeHmP0EzNhILs2FEVpBXqhsxpvZV7QhnSmkJ8qt8KTjHzgmW3cnE3jryPs4zpVooagK3Dw1X2uW3hyvp7sEXGMgp2KD0UhXG+pc8tZM7EVy11ScPJGbPVu1149N46z7I4dnjIiWnSh5in0UUEghvnTnySxI+fgzR57Nhrufms8lNcqvbn1yigpZp4DzAO+rwn3g7CYqhCVGlR+D1TBAbisSQXxv1he7YmSaty00blCg/Q5yml8HVvo8u3pD26Q5qh9I/1a7JYWN+Mc56Jp3yCJjdeyslQUOqvqJmUBkBqrPSM/UNxrGu5iyGx6iR8YF58FFja0NaodsbgAM7IGhUuc/c01KTp/+/v/y5IWPahdOHj4wR/5NXvwotMf+QR2cH1vOD6MHDKPF+bf2UggLOv7dmgQIL7R2Ms69G+xVDnamCdBidc/w12nRTuq8UREZqABOAm9av995BEe7CNcifQqZq9Wqx5iJAZi2mEn84BpjpUqkERKp1HoGjRWvH/NmCwlAf1f38Qr4zLy4bXb97ARJ6jR/UD8r8FhqkdBb+uzPpI6DJHmx//HESptKrbEbAwkAxHuVUnUo3JyCK8LVQtO3A2X8G4V3InAX3Tzs=
+  app: immense-shore-40186
+  on:
+    repo: saadyboy2000/patientIntakeCapstone
