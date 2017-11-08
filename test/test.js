@@ -33,9 +33,9 @@ describe('Users', function() {
   // test that we call at the end. We prefer the first approach, so
   // we just return the chained `chai.request.get` object.
   it('should list users on GET', function(done) {
-    return chai.request(app)
+    chai.request(app)
       .get('/')
-      .then(function(res) {
+      .end(function(res) {
         res.should.have.status(200);
         done();
       });
