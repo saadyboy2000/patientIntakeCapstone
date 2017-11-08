@@ -33,7 +33,7 @@ describe('Users', function() {
   // return an ES6 promise or else pass a `done` callback to the
   // test that we call at the end. We prefer the first approach, so
   // we just return the chained `chai.request.get` object.
-  it('should list users on GET', function(done) {
+  it('should list users on GET', function() {
     /*chai.request(app)
       .get('/')
       .then(function(res) {
