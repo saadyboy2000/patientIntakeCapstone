@@ -6,7 +6,8 @@ const formSchema = mongoose.Schema({
   specialty: {type: String, required: true},
   age: {type: String, required: true},
   id: {type: Number, required: true},
-  questions: {[String], required: true}
+  questions: [{String, required: true}]
+
 },{
   collection: 'forms'
 });
