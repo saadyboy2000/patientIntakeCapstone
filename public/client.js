@@ -11,7 +11,7 @@ function handleNewFormButton() {
 
 //post a new form
 function postNewForm() {
-    $('#new-submit-button').on('click', function (e) {
+    $('#new-form').on('submit', function (e) {
         e.preventDefault();
         let doctorInput = $(this).parent().find('#doctor').val();
         let specialtyInput = $(this).parent().find('#specialty').val();
