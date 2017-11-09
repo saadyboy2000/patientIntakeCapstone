@@ -31,13 +31,13 @@ function postNewForm() {
                 dataType: 'json',
                 contentType: 'application/json',
                 data: JSON.stringify(dataInput),
-                url: NEW_FORMS_URL
+                url: NEW_FORM_URL
             })
             .done(function (data) {
 
                 htmlOutput += '<div class="current-form">';
                 htmlOutput += '<input type="hidden" class="formID" value="';
-                htmlOutput += form._id;
+                htmlOutput += data._id;
                 htmlOutput += '">';
                 htmlOutput += '<h2>Doctor: </h2>';
                 htmlOutput += '<p class="form-doctor">';
