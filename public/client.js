@@ -9,8 +9,8 @@ function handleNewFormButton() {
 }
 
 
-//post a new reflection
-function postNewReflection() {
+//post a new form
+function postNewForm() {
     $('#new-submit-button').on('click', function (e) {
         e.preventDefault();
         let doctorInput = $(this).parent().find('#doctor').val();
@@ -348,7 +348,7 @@ $(function () {
     handleDeleteForms();
     handleDisplayForms();
     retrieveForm();
-    displayFormsById()
+    displayFormById()
     handleUpdateForm();
     handleNavCreateButton();
     handleNavViewButton();
