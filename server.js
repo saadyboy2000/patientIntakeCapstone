@@ -61,15 +61,15 @@ app.get('/forms/:id', (req, res) => {
 //post new form
 app.post('/forms/new', (req, res) => {
     console.log(req.body);
-    const requiredFields = ['doctor', 'specialty', 'age', 'id', 'questions'];
-    for (let i = 0; i < requiredFields.lenth; i++) {
+    //const requiredFields = ['doctor', 'specialty', 'age', 'id', 'questions'];
+    /*for (let i = 0; i < requiredFields.lenth; i++) {
         const field = requiredFields[i];
         if (!(field in req.body)) {
             const message = `Missing \`${field}\` in request body`
             console.error(message);
             return res.status(400).send(message);
         }
-    }
+    } */
 
 Forms
         .create({
