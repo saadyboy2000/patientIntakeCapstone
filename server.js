@@ -76,7 +76,6 @@ Forms
         .create({
             doctor: req.body.doctor,
             specialty: req.body.specialty,
-            age: req.body.age,
             id: req.body.id,
             questions: req.body.questions,
         })
