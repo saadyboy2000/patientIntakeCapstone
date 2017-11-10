@@ -141,7 +141,7 @@ function displayFormById() {
                 console.log(jqXHR);
                 console.log(error);
                 console.log(errorThrown);
-                $('reflections').html('No reflections found');
+                $('#forms').html('No reflections found');
                 $('#new-formEntry').removeClass('hide-display');
             })
     })
@@ -178,7 +178,7 @@ function retrieveForm() {
                 console.log(jqXHR);
                 console.log(error);
                 console.log(errorThrown);
-                $('forms').html('No forms found');
+                $('#forms').html('No forms found');
             })
     });
 }
@@ -255,14 +255,14 @@ function deleteForm() {
             console.log(jqXHR);
             console.log(error);
             console.log(errorThrown);
-            $('forms').html('No forms found');
+            $('#forms').html('No forms found');
             $('#new-formEntry').removeClass('hide-display');
         })
 }
 
 
 function handleDisplayForms() {
-    $('#Forms').on('click', '#view-all-button', function () {
+    $('#forms').on('click', '#view-all-button', function () {
         displayForms();
         $('.current-form').addClass('hide-display');
     });
