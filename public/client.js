@@ -306,8 +306,7 @@ function handleNavViewButton() {
     $('#nav-view-button').click(function () {
         displayReflections();
         $('#form-container').removeClass('hide-display');
-        $('#new-entry').addClass('hide-display');
-        $('#resources').addClass('hide-display');
+        $('#new-form').addClass('hide-display');
         $('.start-page').addClass('hide-display');
     })
 }
