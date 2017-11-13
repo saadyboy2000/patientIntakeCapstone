@@ -71,8 +71,9 @@ function postNewForm() {
 }
 
 
-//display all reflections
+//display all forms
 function displayForms() {
+    $('#nav-view-button').on('click', function () {
     $.ajax({
             method: 'GET',
             url: FORMS_URL
@@ -102,6 +103,7 @@ function displayForms() {
             console.log(errorThrown);
             $('#forms').html('No forms found');
         })
+    })
 }
 
 //display reflections by id
