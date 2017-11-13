@@ -76,7 +76,7 @@ function displayForms() {
     $('#nav-view-button').on('click', function () {
     $.ajax({
             method: 'GET',
-            url: FORMS_URL
+            url: FORM_URL
         })
         .done(function (data) {
 
