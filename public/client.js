@@ -349,7 +349,8 @@ $(function () {
     handleDeleteForms();
     handleDisplayForms();
     retrieveForm();
-    displayFormById()
+    displayFormById();
+    displayForms();
     handleUpdateForm();
     handleNavCreateButton();
     handleNavViewButton();
