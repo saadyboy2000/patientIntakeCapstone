@@ -17,13 +17,13 @@ function postNewForm() {
         e.preventDefault();
         let doctorInput = $(this).parent().find('#doctor').val();
         let specialtyInput = $(this).parent().find('#specialty').val();
-        //let idInput = $(this).parent().find('#id').val();
+        let ageInput = $(this).parent().find('#age').val();
         let questionsInput = $(this).parent().find('#questions').val();
 
         let dataInput = {
             'doctor': doctorInput,
             'specialty': specialtyInput,
-            //'id': idInput,
+            'age': ageInput,
             'questions': questionsInput,
         };
 
@@ -44,6 +44,10 @@ function postNewForm() {
                 htmlOutput += '<h2>Doctor: </h2>';
                 htmlOutput += '<p class="form-doctor">';
                 htmlOutput += data.doctor;
+                htmlOutput += '</p><br><br>';
+                htmlOutput += '<h2>Specialty: </h2>';
+                htmlOutput += '<p class="form-age">';
+                htmlOutput += data.age;
                 htmlOutput += '</p><br><br>';
                 htmlOutput += '<h2>Specialty: </h2>';
                 htmlOutput += '<p class="form-specialty">';
@@ -90,6 +94,7 @@ function displayForms() {
                 return `<div id="entries">
                         <input type="hidden" class="formID" value="${forms._id}">
                         <p class="reflection-info">Doctor:</p> <p class="form-doctor">${forms.doctor}</p><br><br>
+                         <p class="reflection-info">Age:</p> <p class="form-age"> ${forms.age}</p><br><br>
                         <p class="reflection-info">Specialty:</p> <p class="form-specialty"> ${forms.specialty}</p><br><br>
                         <div id="truncate"><p class="reflection-info">Questions:</p> <p class="form-question"> ${forms.questions}</p></div><br><br>
                         <button id="edit-button" class="form-button">Edit</button>
@@ -125,6 +130,10 @@ function displayFormById() {
                 htmlOutput += '<h2>Form for: </h2>';
                 htmlOutput += '<p class="form-doctor">';
                 htmlOutput += data.doctor;
+                htmlOutput += '</p><br><br>';
+                htmlOutput += '<h2>Specialty: </h2>';
+                htmlOutput += '<p class="form-age">';
+                htmlOutput += data.age;
                 htmlOutput += '</p><br><br>';
                 htmlOutput += '<h2>Specialty: </h2>';
                 htmlOutput += '<p class="form-specialty">';
@@ -170,6 +179,8 @@ function retrieveForm() {
                 <legend>Write a form</legend>
                 <label>Doctor:</label><br>
                 <input type="text" id="doctor" name="doctor" required value="${data.doctor}"><br>
+                 <label>Doctor:</label><br>
+                <input type="text" id="age" name="age" required value="${data.age}"><br>
                 <label>Specialty:</label><br>
                 <input type="text" id="specialty" name="specialty" value="${data.specialty}" required><br>
                 <label>Questions:</label><br>
@@ -191,10 +202,12 @@ function retrieveForm() {
 function updateForm() {
     let idParameter = $('form').find('.formID').val();
     let doctorInput = $('form').parent().find('#doctor').val();
+    let ageInput = $('form').parent().find('#age').val();
     let specialtyInput = $('form').parent().find('#specialty').val();
     let questionsInput = $('form').parent().find('#questions').val();
     let newDataInput = {
         'doctor': doctorInput,
+        'age': ageInput,
         'specialty': specialtyInput,
         'questions': questionsInput,
     };
@@ -216,6 +229,10 @@ function updateForm() {
             htmlOutput += '<h2>Doctor: </h2>';
             htmlOutput += '<p class="form-doctor">';
             htmlOutput += newDataInput.doctor;
+             htmlOutput += '</p><br><br>';
+            htmlOutput += '<h2>Intended age: </h2>';
+            htmlOutput += '<p class="form-age">';
+            htmlOutput += newDataInput.age;
             htmlOutput += '</p><br><br>';
             htmlOutput += '<h2>Specialty: </h2>';
             htmlOutput += '<p class="form-doctor">';
@@ -295,6 +312,8 @@ function handleUpdateForm() {
             <legend class="section-header">Write a form</legend>
             <label>Doctor:</label><br>
             <input type="text" id="doctor" name="doctor" required><br>
+             <label>Intended Age:</label><br>
+            <input type="text" id="age" name="age" required><br>
             <label>Specialty:</label><br>
             <input type="text" id="specialty" name="specialty" required><br>
             <label>Questions:</label><br>
