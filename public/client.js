@@ -16,13 +16,13 @@ function postNewForm() {
         e.preventDefault();
         let doctorInput = $(this).parent().find('#doctor').val();
         let specialtyInput = $(this).parent().find('#specialty').val();
-        //let idInput = $(this).parent().find('#id').val();
+        let idInput = $(this).parent().find('#id').val();
         let questionsInput = $(this).parent().find('#questions').val();
 
         let dataInput = {
             'doctor': doctorInput,
             'specialty': specialtyInput,
-            //'id': idInput,
+            'id': idInput,
             'questions': questionsInput,
         };
 
@@ -322,11 +322,7 @@ function handleNavCreateButton() {
         })
     };
 
-function hideCreateForm(){
-    $('.dropdown-content').on('click', '#nav-create-button', function () {
-        $('div#createForm').hide()
-    })
-};
+
 
 //When the user clicks on the button,
 //toggle between hiding and showing the dropdown content
