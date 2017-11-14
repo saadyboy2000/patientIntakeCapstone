@@ -76,7 +76,7 @@ Forms
         .create({
             doctor: req.body.doctor,
             specialty: req.body.specialty,
-            age: req.body.age,
+            id: req.body.id,
             questions: req.body.questions,
         })
         .then(forms => res.status(201).json(forms))
@@ -93,7 +93,7 @@ Forms
 app.put('/forms/:id', jsonParser, (req, res) => {
 
     const updated = {};
-    const updateableFields = ['doctor', 'specialty', questions];
+    const updateableFields = ['doctor', 'specialty', 'age', 'id', questions];
     updateableFields.forEach(field => {
         if (field in req.body) {
             updated[field] = req.body[field];

@@ -27,7 +27,6 @@ const formSchema = mongoose.Schema({
 // of the model. This method will be used to return an object that only
 // exposes *some* of the fields we want from the underlying data
 /*formSchema.methods.apiRepr = function() {
-
   return {
     doctor: this.doctor,
     specialty: this.specialty,

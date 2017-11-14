@@ -7,7 +7,6 @@ let NEW_FORM_URL = '/forms/new';
         $('.start-page').addClass('hide-display');
     })
 }
-
 */
 
 
