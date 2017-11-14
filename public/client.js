@@ -353,7 +353,7 @@ $(function () {
     displayForms();
     handleUpdateForm();
     handleNavCreateButton();
-    handleNavViewButton();
+    //handleNavViewButton();
     handleNavResourcesButton();
     handleNewFormButton();
     showMenu();
