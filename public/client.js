@@ -338,7 +338,7 @@ function showMenu() {
     })
 };
 
-function hideMenu() {
+/*function hideMenu() {
     //    $(document).click(function (e) {
     //        if (e.target.class != 'drpbtn') {
     //            $(".drpbtn").hide();
@@ -348,6 +348,7 @@ function hideMenu() {
         $('div#myDropdown').hide();
     })
 };
+*/
 
 
 
