@@ -286,7 +286,7 @@ function handleUpdateForm() {
 
 //navigation buttons
 
-/* function handleNavCreateButton() {
+ function handleNavCreateButton() {
     $('.dropdown-content').on('click', '#nav-create-button', function () {
         $('#new-form :input').val("");
         $('#new-formEntry').removeClass('hide-display').html(` <form method="post" id="new-form">
@@ -305,17 +305,17 @@ function handleUpdateForm() {
     })
 }
 
-function handleNavViewButton() {
+/*function handleNavViewButton() {
     $('#nav-view-button').click(function () {
         displayReflections();
         $('#form-container').removeClass('hide-display');
         $('#new-form').addClass('hide-display');
         $('.start-page').addClass('hide-display');
     })
-}
-*/
+}*/
 
-function handleNavCreateButton() {
+
+function toggleNavCreateButton() {
     $('.dropdown-content').on('click', '#nav-create-button', function () {
         console.log('clicked');
         $('#createForm').toggle();
@@ -357,9 +357,9 @@ $(function () {
     displayForms();
     handleUpdateForm();
     handleNavCreateButton();
+    toggleNavCreateButton();
     //handleNavViewButton();
     //handleNavResourcesButton();
-    hideCreateForm();
     //handleNewFormButton();
     showMenu();
     //hideMenu();
