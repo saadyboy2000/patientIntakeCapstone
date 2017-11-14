@@ -17,13 +17,13 @@ function postNewForm() {
         e.preventDefault();
         let doctorInput = $(this).parent().find('#doctor').val();
         let specialtyInput = $(this).parent().find('#specialty').val();
-        let idInput = $(this).parent().find('#id').val();
+        //let idInput = $(this).parent().find('#id').val();
         let questionsInput = $(this).parent().find('#questions').val();
 
         let dataInput = {
             'doctor': doctorInput,
             'specialty': specialtyInput,
-            'id': idInput,
+            //'id': idInput,
             'questions': questionsInput,
         };
 
@@ -39,7 +39,7 @@ function postNewForm() {
 
                 htmlOutput += '<div class="current-form">';
                 htmlOutput += '<input type="hidden" class="formID" value="';
-                htmlOutput += data.id;
+                htmlOutput += data._id;
                 htmlOutput += '">';
                 htmlOutput += '<h2>Doctor: </h2>';
                 htmlOutput += '<p class="form-doctor">';
@@ -88,7 +88,7 @@ function displayForms() {
 
             let formInput = data.map(function (forms, index) {
                 return `<div id="entries">
-                        <input type="hidden" class="formID" value="${forms.id}">
+                        <input type="hidden" class="formID" value="${forms._id}">
                         <p class="reflection-info">Doctor:</p> <p class="form-doctor">${forms.doctor}</p><br><br>
                         <p class="reflection-info">Specialty:</p> <p class="form-specialty"> ${forms.specialty}</p><br><br>
                         <div id="truncate"><p class="reflection-info">Questions:</p> <p class="form-question"> ${forms.questions}</p></div><br><br>
@@ -120,7 +120,7 @@ function displayFormById() {
                 let htmlOutput = "";
                 htmlOutput += '<div class="current-form">';
                 htmlOutput += '<input type="hidden" class="formID" value="';
-                htmlOutput += data.id;
+                htmlOutput += data._id;
                 htmlOutput += '">';
                 htmlOutput += '<h2>Form for: </h2>';
                 htmlOutput += '<p class="form-doctor">';
@@ -165,7 +165,7 @@ function retrieveForm() {
             })
             .done(function (data) {
                 $('#new-formEntry').html(`<form method="post" id="new-form">
-                <input type="hidden" class="formID" value="${data.id}">
+                <input type="hidden" class="formID" value="${data._id}">
                 <fieldset>
                 <legend>Write a form</legend>
                 <label>Doctor:</label><br>
