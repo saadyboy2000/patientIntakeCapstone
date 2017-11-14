@@ -288,7 +288,7 @@ function handleUpdateForm() {
 //navigation buttons
 
  function handleNavCreateButton() {
-    $('.dropdown-content').on('click', '#nav-create-button', function () {
+    $('.dropdown-content').on('submit', '#nav-create-button', function () {
         $('#new-form :input').val("");
         $('#new-formEntry').removeClass('hide-display').html(` <form method="post" id="new-form">
             <fieldset>
