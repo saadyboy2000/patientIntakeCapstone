@@ -323,7 +323,7 @@ function handleNavCreateButton() {
     };
 
 function hideCreateForm(){
-    $('li').on('click', function (){
+    $('.dropdown-content').on('click', '#nav-create-button', function () {
         $('div#createForm').hide()
     })
 };
