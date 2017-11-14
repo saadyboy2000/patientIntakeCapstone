@@ -366,5 +366,5 @@ $(function () {
     hideCreateForm();
     //handleNewFormButton();
     showMenu();
-    hideMenu();
+    //hideMenu();
 })
