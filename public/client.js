@@ -354,7 +354,7 @@ $(function () {
     handleUpdateForm();
     handleNavCreateButton();
     //handleNavViewButton();
-    handleNavResourcesButton();
+    //handleNavResourcesButton();
     handleNewFormButton();
     showMenu();
     hideMenu();
