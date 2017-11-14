@@ -285,7 +285,7 @@ function handleUpdateForm() {
 
 //navigation buttons
 
-function handleNavCreateButton() {
+/* function handleNavCreateButton() {
     $('.dropdown-content').on('click', '#nav-create-button', function () {
         $('#new-form :input').val("");
         $('#new-formEntry').removeClass('hide-display').html(` <form method="post" id="new-form">
@@ -312,15 +312,9 @@ function handleNavViewButton() {
         $('.start-page').addClass('hide-display');
     })
 }
+*/
 
-function handleNavResourcesButton() {
-    $('#nav-resources-button').click(function () {
-        //$('#resources').removeClass('hide-display');
-        $('#new-formEntry').addClass('hide-display');
-        $('#form-container').addClass('hide-display');
-        $('.start-page').addClass('hide-display');
-    })
-}
+
 
 //When the user clicks on the button,
 //toggle between hiding and showing the dropdown content
@@ -343,6 +337,12 @@ function hideMenu() {
     })
 };
 
+function handleNavCreateButton() {
+    $('.dropdown-content').on('click', '#nav-create-button', function () {
+        console.log('clicked');
+        $('#createForm').toggle();
+        })
+    };
 
 $(function () {
     postNewForm();
