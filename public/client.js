@@ -7,6 +7,7 @@ let NEW_FORM_URL = '/forms/new';
         $('.start-page').addClass('hide-display');
     })
 }
+
 */
 
 
@@ -38,7 +39,7 @@ function postNewForm() {
 
                 htmlOutput += '<div class="current-form">';
                 htmlOutput += '<input type="hidden" class="formID" value="';
-                htmlOutput += data._id;
+                htmlOutput += data.id;
                 htmlOutput += '">';
                 htmlOutput += '<h2>Doctor: </h2>';
                 htmlOutput += '<p class="form-doctor">';
@@ -87,7 +88,7 @@ function displayForms() {
 
             let formInput = data.map(function (forms, index) {
                 return `<div id="entries">
-                        <input type="hidden" class="formID" value="${forms._id}">
+                        <input type="hidden" class="formID" value="${forms.id}">
                         <p class="reflection-info">Doctor:</p> <p class="form-doctor">${forms.doctor}</p><br><br>
                         <p class="reflection-info">Specialty:</p> <p class="form-specialty"> ${forms.specialty}</p><br><br>
                         <div id="truncate"><p class="reflection-info">Questions:</p> <p class="form-question"> ${forms.questions}</p></div><br><br>
@@ -119,7 +120,7 @@ function displayFormById() {
                 let htmlOutput = "";
                 htmlOutput += '<div class="current-form">';
                 htmlOutput += '<input type="hidden" class="formID" value="';
-                htmlOutput += data._id;
+                htmlOutput += data.id;
                 htmlOutput += '">';
                 htmlOutput += '<h2>Form for: </h2>';
                 htmlOutput += '<p class="form-doctor">';
@@ -164,7 +165,7 @@ function retrieveForm() {
             })
             .done(function (data) {
                 $('#new-formEntry').html(`<form method="post" id="new-form">
-                <input type="hidden" class="formID" value="${data._id}">
+                <input type="hidden" class="formID" value="${data.id}">
                 <fieldset>
                 <legend>Write a form</legend>
                 <label>Doctor:</label><br>
