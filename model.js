@@ -4,8 +4,8 @@ const mongoose = require('mongoose');
 const formSchema = mongoose.Schema({
   doctor: {type: String, required: true},
   specialty: {type: String, required: true},
-  //age: {type: String, required: true},
-  id: {type: Number, required: true},
+  age: {type: String, required: true},
+  //id: {type: Number, required: true},
   questions: [String]
 
 },{
