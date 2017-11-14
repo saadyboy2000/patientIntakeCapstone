@@ -1,12 +1,13 @@
 let FORM_URL = '/forms';
 let NEW_FORM_URL = '/forms/new';
 
-function handleNewFormButton() {
+/*function handleNewFormButton() {
     $('#nav-create-button').on('click', function () {
         $('#new-formEntry').removeClass('hide-display');
         $('.start-page').addClass('hide-display');
     })
 }
+*/
 
 
 //post a new form
@@ -362,7 +363,7 @@ $(function () {
     //handleNavViewButton();
     //handleNavResourcesButton();
     hideCreateForm();
-    handleNewFormButton();
+    //handleNewFormButton();
     showMenu();
     hideMenu();
 })
