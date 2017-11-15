@@ -163,7 +163,7 @@ function retrieveForm() {
                 contentType: 'application/json'
             })
             .done(function (data) {
-                $('#new-formEntry').html(`<form method="post" id="new-form">
+                $('#new-entry').html(`<form method="post" id="new-form">
                 <input type="hidden" class="formID" value="${data.id}">
                 <fieldset>
                 <legend>Write a form</legend>
@@ -230,7 +230,7 @@ function updateForm() {
             htmlOutput += '<button id="view-all-button" class="form-button">View All</button>';
 
             $('#forms').html(htmlOutput);
-            $('#new-formEntry').addClass('hide-display');
+            $('#new-entry').addClass('hide-display');
             $('#form-container').removeClass('hide-display');
         })
         .fail(function (jqXHR, error, errorThrown) {
@@ -259,7 +259,7 @@ function deleteForm() {
             console.log(error);
             console.log(errorThrown);
             $('#forms').html('No forms found');
-            $('#new-formEntry').removeClass('hide-display');
+            $('#new-entry').removeClass('hide-display');
         })
 }
 
@@ -278,7 +278,7 @@ function handleDeleteForms() {
 }
 
 function handleUpdateForm() {
-    $('#new-formEntry').on('click', '#update-button', function (e) {
+    $('#new-entry').on('click', '#update-button', function (e) {
         e.preventDefault();
         updateForm();
     });
@@ -289,7 +289,7 @@ function handleUpdateForm() {
  function handleNavCreateButton() {
     $('.dropdown-content').on('submit', '#nav-create-button', function () {
         $('#new-form :input').val("");
-        $('#new-formEntry').removeClass('hide-display').html(` <form method="post" id="new-form">
+        $('#new-entry').removeClass('hide-display').html(` <form method="post" id="new-form">
             <fieldset>
             <legend class="section-header">Write a form</legend>
             <label>Doctor:</label><br>
