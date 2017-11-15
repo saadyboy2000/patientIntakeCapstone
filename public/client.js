@@ -86,7 +86,7 @@ function displayForms() {
             };
 
             let formInput = data.map(function (forms, index) {
-                return `<div id="entries">
+                return `<div id="form-entries">
                         <input type="hidden" class="formID" value="${forms._id}">
                         <p class="reflection-info">Doctor:</p> <p class="form-doctor">${forms.doctor}</p><br><br>
                         <p class="reflection-info">Specialty:</p> <p class="form-specialty"> ${forms.specialty}</p><br><br>
@@ -272,13 +272,13 @@ function handleDisplayForms() {
 }
 
 function handleDeleteForms() {
-    $('#form-container').on('click', '#delete-button', function () {
+    $('#form-entries').on('click', '#delete-button', function () {
         deleteForm();
     });
 }
 
 function handleUpdateForm() {
-    $('#new-entry').on('submit', '#update-button', function () {
+    $('#new-entry').on('submit', '#update-button', function (/*e*/) {
         //e.preventDefault();
         updateForm();
     });
