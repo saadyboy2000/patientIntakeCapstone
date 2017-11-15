@@ -315,13 +315,13 @@ function handleUpdateForm() {
 }*/
 
 
-function toggleNavCreateButton() {
+/*function toggleNavCreateButton() {
     $('.dropdown-content').on('click', '#nav-create-button', function () {
         console.log('clicked');
         $('#createForm').toggle();
         })
     };
-
+*/
 
 
 //When the user clicks on the button,
