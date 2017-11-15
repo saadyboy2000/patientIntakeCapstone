@@ -278,8 +278,8 @@ function handleDeleteForms() {
 }
 
 function handleUpdateForm() {
-    $('#new-entry').on('submit', '#update-button', function (e) {
-        e.preventDefault();
+    $('#new-entry').on('submit', '#update-button', function () {
+        //e.preventDefault();
         updateForm();
     });
 }
