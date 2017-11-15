@@ -110,7 +110,7 @@ function displayForms() {
 //display reflections by id
 function displayFormById() {
     $('#forms').on('click', '#current-button', function () {
-        let idParameter = $(this).parent().find('.reflectionID').val();
+        let idParameter = $(this).parent().find('.formID').val();
         $.ajax({
                 method: 'GET',
                 url: FORM_URL + '/' + idParameter
@@ -144,8 +144,8 @@ function displayFormById() {
                 console.log(jqXHR);
                 console.log(error);
                 console.log(errorThrown);
-                $('#forms').html('No reflections found');
-                $('#new-formEntry').removeClass('hide-display');
+                $('#forms').html('No form found');
+                $('#new-entry').removeClass('hide-display');
             })
     })
 }
@@ -278,7 +278,7 @@ function handleDeleteForms() {
 }
 
 function handleUpdateForm() {
-    $('#new-entry').on('click', '#update-button', function (e) {
+    $('#new-entry').on('submit', '#update-button', function (e) {
         e.preventDefault();
         updateForm();
     });
