@@ -272,7 +272,7 @@ function handleDisplayForms() {
 }
 
 function handleDeleteForms() {
-    $('#form-entries').on('click', '#delete-button', function () {
+    $('#form-container').on('click', '#delete-button', function () {
         deleteForm();
     });
 }
