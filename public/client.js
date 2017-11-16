@@ -211,7 +211,7 @@ function updateForm() {
     };
 
     let htmlOutput = "";
-
+    console.log("updating form");
     $.ajax({
             method: 'PUT',
             url: FORM_URL + '/' + idParameter,
