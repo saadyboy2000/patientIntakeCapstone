@@ -136,7 +136,7 @@ function displayFormById() {
                 htmlOutput += '</div>';
                 htmlOutput += '<button id="edit-button" class="form-button">Edit</button>';
                 htmlOutput += '<button id="delete-button" class="form-button">Delete</button>';
-                htmlOutput += '<button id="view-all-button" class="form-button">View All</button>';
+                htmlOutput += '<button id="nav-view-button" class="form-button">View All</button>';
 
                 $('#forms').html(htmlOutput);
             })
@@ -227,7 +227,7 @@ function updateForm() {
             htmlOutput += '</div>';
             htmlOutput += '<button id="edit-button" class="form-button">Edit</button>';
             htmlOutput += '<button id="delete-button" class="form-button">Delete</button>';
-            htmlOutput += '<button id="view-all-button" class="form-button">View All</button>';
+            htmlOutput += '<button id="nav-view-button" class="form-button">View All</button>';
 
             $('#forms').html(htmlOutput);
             $('#new-entry').addClass('hide-display');
@@ -305,7 +305,8 @@ function handleUpdateForm() {
     })
 }
 
-/*function handleNavViewButton() {
+/*
+function handleNavViewButton() {
     $('#nav-view-button').click(function () {
         displayReflections();
         $('#form-container').removeClass('hide-display');
