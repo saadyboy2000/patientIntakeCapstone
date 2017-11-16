@@ -267,8 +267,8 @@ function updateForm() {
 }
 
 //delete selected form
-function deleteForm() {
-    let idParameter = $('div').find('.formID').val(); //how can I find the right div, this one seems to find the first one
+function deleteForm(idParameter) {
+    
     $.ajax({
             method: 'DELETE',
             url: FORM_URL + '/' + idParameter,
@@ -298,8 +298,7 @@ function handleDisplayForms() {
 
 function handleDeleteForms() {
     $('#form-container').on('click', '#delete-button', function () {
-        console.log($(this).attr("data-form-id"));
-        deleteForm();
+        deleteForm($(this).attr("data-form-id"));
     });
 }
 
