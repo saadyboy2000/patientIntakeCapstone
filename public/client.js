@@ -92,7 +92,7 @@ function displayForms() {
                         <p class="reflection-info">Specialty:</p> <p class="form-specialty"> ${forms.specialty}</p><br><br>
                         <div id="truncate"><p class="reflection-info">Questions:</p> <p class="form-question"> ${forms.questions}</p></div><br><br>
                         <button id="edit-button" class="form-button">Edit</button>
-                        <button id="delete-button" class="form-button">Delete</button>
+                        <button id="delete-button" class="form-button" data-form-id="${forms._id}">Delete</button>
                         <button id="current-button" class="form-button">View</button>
                         </div>`;
             });
@@ -254,7 +254,7 @@ function updateForm() {
             htmlOutput += '<button id="nav-view-button" class="form-button">View All</button>';
 
             $('#forms').html(htmlOutput); */
-            
+
             $('#new-entry').addClass('hide-display');
             $('#form-container').removeClass('hide-display');
         })
@@ -266,7 +266,7 @@ function updateForm() {
         })
 }
 
-//delete selected reflection
+//delete selected form
 function deleteForm() {
     let idParameter = $('div').find('.formID').val(); //how can I find the right div, this one seems to find the first one
     $.ajax({
@@ -298,6 +298,7 @@ function handleDisplayForms() {
 
 function handleDeleteForms() {
     $('#form-container').on('click', '#delete-button', function () {
+        console.log($(this).attr("data-form-id"));
         deleteForm();
     });
 }
