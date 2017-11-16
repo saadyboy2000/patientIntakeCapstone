@@ -243,7 +243,7 @@ function updateForm() {
 
 //delete selected reflection
 function deleteForm() {
-    let idParameter = $('div').find('.formID').val();
+    let idParameter = $('div').find('.formID').val(); //how can I find the right div, this one seems to find the first one
     $.ajax({
             method: 'DELETE',
             url: FORM_URL + '/' + idParameter,
@@ -278,8 +278,8 @@ function handleDeleteForms() {
 }
 
 function handleUpdateForm() {
-    $('#new-entry').on('submit', '#update-button', function (/*e*/) {
-        //e.preventDefault();
+    $('#new-entry').on('submit', '#update-button', function (e) {
+        e.preventDefault();
         updateForm();
     });
 }
