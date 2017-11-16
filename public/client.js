@@ -55,7 +55,7 @@ function postNewForm() {
                 htmlOutput += '</div>';
                 htmlOutput += '<button id="edit-button" class="form-button">Edit</button>';
                 htmlOutput += '<button id="delete-button" class="form-button">Delete</button>';
-                htmlOutput += '<button id="view-all-button" class="form-button">View All</button>';
+                htmlOutput += '<button id="nav-view-button" class="form-button">View All</button>';
 
                 $('#forms').html(htmlOutput);
                 $('#new-form :input').val("");
