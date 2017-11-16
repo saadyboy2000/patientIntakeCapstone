@@ -220,7 +220,19 @@ function updateForm() {
             data: JSON.stringify(newDataInput)
         })
         .done(function (data) {
-            htmlOutput += '<div class="current-form">';
+            $('#forms').html(`<div class="current-form">
+                <input type="hidden" class="formID" value="${idParameter}">
+                <h2>Doctor: </h2>
+                <p class="form-doctor">${newDataInput.doctor}</p><br><br>
+                <h2>Specialty: </h2>
+                <p class="form-specialty">${newDataInput.specialty}</p><br><br>
+                <h2>questions: </h2>
+                <p class="form-questions">${newDataInput.questions}</p><br><br>
+                </div>
+                <button id="edit-button" class="form-button">Edit</button>
+                <button id="delete-button" class="form-button">Delete</button>
+                <button id="nav-view-button" class="form-button">View All</button>`);
+            /*htmlOutput += '<div class="current-form">';
             htmlOutput += '<input type="hidden" class="formID" value="';
             htmlOutput += idParameter;
             htmlOutput += '">';
@@ -241,7 +253,8 @@ function updateForm() {
             htmlOutput += '<button id="delete-button" class="form-button">Delete</button>';
             htmlOutput += '<button id="nav-view-button" class="form-button">View All</button>';
 
-            $('#forms').html(htmlOutput);
+            $('#forms').html(htmlOutput); */
+            
             $('#new-entry').addClass('hide-display');
             $('#form-container').removeClass('hide-display');
         })
