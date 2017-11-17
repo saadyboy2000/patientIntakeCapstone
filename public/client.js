@@ -325,7 +325,7 @@ function deleteItem(itemElement){
 function handleDeleteForms() {
     $('#form-container').on('click', '#delete-button', function () {
         deleteForm($(this).attr("data-form-id"));
-        const itemElement = getItemElement(event.currentTarget);
+        const itemElement = getItemElement($(this).attr("data-form-id");
         deleteItem(itemElement);
 
     });
