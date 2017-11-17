@@ -311,23 +311,12 @@ function handleDisplayForms() {
     });
 }
 
-function getItemElement(item){
-  const itemElemString = $(item)
-  .closest('.current-form');
-  return itemElemString;
-}
-
-
-function deleteItem(itemElement){
-  console.log(`removing item`);
-  itemElement.remove();
 
 function handleDeleteForms() {
     $('#form-container').on('click', '#delete-button', function () {
         deleteForm($(this).attr("data-form-id"));
-        const itemElement = getItemElement($(this).attr("data-form-id"));
-        deleteItem(itemElement);
-
+        let itemElement = $(this).attr("data-form-id");
+        itemElement.remove();
     });
 }
 
