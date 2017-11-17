@@ -299,8 +299,6 @@ function handleDisplayForms() {
 function handleDeleteForms() {
     $('#form-container').on('click', '#delete-button', function () {
         deleteForm($(this).attr("data-form-id"));
-        let elem = document.querySelector($('#delete-button');
-        elem.parentNode.removeChild(elem);
     });
 }
 
