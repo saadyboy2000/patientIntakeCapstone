@@ -36,7 +36,21 @@ function postNewForm() {
             })
             .done(function (data) {
 
-                htmlOutput += '<div class="current-form">';
+                htmlOutput = `<div class="current-form">
+                <input type="hidden" class="formID" value="${data._id}">
+                <h2>Doctor: </h2>
+                <p class="form-doctor">${data.doctor}</p><br><br>
+                <h2>Specialty: </h2>
+                <p class="form-specialty">${data.specialty}</p><br><br>
+                <h2>Questions: </h2>
+                <p class="form-questions">${data.questions}</p><br><br>
+                </div>
+                <button id="edit-button" class="form-button">Edit</button>
+                <button id="delete-button" class="form-button">Delete</button>
+                <button id="nav-view-button" class="form-button">View All</button>`;
+
+
+               /* htmlOutput += '<div class="current-form">';
                 htmlOutput += '<input type="hidden" class="formID" value="';
                 htmlOutput += data._id;
                 htmlOutput += '">';
@@ -54,8 +68,8 @@ function postNewForm() {
                 htmlOutput += '</p><br><br>';
                 htmlOutput += '</div>';
                 htmlOutput += '<button id="edit-button" class="form-button">Edit</button>';
-                htmlOutput += '<button id="delete-button" class="form-button">Delete</button>';
-                htmlOutput += '<button id="nav-view-button" class="form-button">View All</button>';
+                htmlOutput += '<button id="delete-button" class="form-button">Delete</button>';//what is issue with this button?
+                htmlOutput += '<button id="nav-view-button" class="form-button">View All</button>'; */
 
                 $('#forms').html(htmlOutput);
                 $('#new-form :input').val("");
