@@ -328,7 +328,7 @@ function handleUpdateForm() {
 
 //navigation buttons
 
- function handleNavCreateButton() {
+/* function handleNavCreateButton() {
     $('.dropdown-content').on('submit', '#nav-create-button', function () {
         $('#new-form :input').val("");
         $('#new-entry').removeClass('hide-display').html(` <form method="post" id="new-form">
@@ -346,7 +346,7 @@ function handleUpdateForm() {
         postNewForm();
     })
 }
-
+*/
 /*
 function handleNavViewButton() {
     $('#nav-view-button').click(function () {
