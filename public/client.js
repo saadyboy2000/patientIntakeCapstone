@@ -358,7 +358,7 @@ function handleNavViewButton() {
 }*/
 
 
-function toggleNavCreateButton() {
+function navCreateButton() {
     $('.dropdown-content').on('click', '#nav-create-button', function () {
         console.log('clicked');
         //$('#createForm').toggle();
@@ -412,7 +412,7 @@ $(function () {
     displayForms();
     handleUpdateForm();
     handleNavCreateButton();
-    toggleNavCreateButton();
+    navCreateButton();
     //handleNavViewButton();
     //handleNavResourcesButton();
     //handleNewFormButton();
