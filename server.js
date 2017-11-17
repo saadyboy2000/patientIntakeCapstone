@@ -93,7 +93,7 @@ Forms
 app.put('/forms/:id', jsonParser, (req, res) => {
 
     const updated = {};
-    const updateableFields = ['doctor', 'specialty', 'age', 'id', questions];
+    const updateableFields = ['doctor', 'specialty', 'age', 'id', 'questions'];
     updateableFields.forEach(field => {
         if (field in req.body) {
             updated[field] = req.body[field];
