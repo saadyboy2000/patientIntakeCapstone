@@ -305,10 +305,10 @@ function deleteForm(idParameter) {
 
 
 function handleDisplayForms() {
-    $('#forms').on('click', '#view-all-button', function () {
+   // $('#forms').on('click', '#view-all-button', function () {
         displayForms();
-        $('.current-form').addClass('hide-display');
-    });
+        //$('.current-form').addClass('hide-display');
+    //});
 }
 
 
