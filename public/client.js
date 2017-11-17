@@ -315,7 +315,7 @@ function handleDisplayForms() {
 function handleDeleteForms() {
     $('#form-container').on('click', '#delete-button', function () {
         deleteForm($(this).attr("data-form-id"));
-        $(this).remove().
+        $(this).remove();
     });
 }
 
