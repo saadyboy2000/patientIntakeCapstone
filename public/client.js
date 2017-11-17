@@ -321,7 +321,7 @@ function handleDeleteForms() {
 
 function handleUpdateForm() {
     console.log("handleUpdateForm");
-    $('#new-entry').on('submit', '#update-button', function (e) {
+    $('#new-entry').on('click', '#update-button', function (e) {
         console.log("clicking on update");
         e.preventDefault();
         updateForm();
