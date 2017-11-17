@@ -361,7 +361,7 @@ function handleNavViewButton() {
 function toggleNavCreateButton() {
     $('.dropdown-content').on('click', '#nav-create-button', function () {
         console.log('clicked');
-        $('#createForm').toggle();
+        //$('#createForm').toggle();
          $('#new-form').html(`<fieldset>
             <legend class="section-header">Create a form</legend>
             <label>Doctor:</label><br>
