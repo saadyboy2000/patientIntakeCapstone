@@ -3,8 +3,9 @@ let NEW_FORM_URL = '/forms/new';
 
 /*function handleNewFormButton() {
     $('#nav-create-button').on('click', function () {
-        $('#new-formEntry').removeClass('hide-display');
-        $('.start-page').addClass('hide-display');
+        
+        //$('#new-formEntry').removeClass('hide-display');
+        //$('.start-page').addClass('hide-display');
     })
 }
 */
@@ -361,6 +362,18 @@ function toggleNavCreateButton() {
     $('.dropdown-content').on('click', '#nav-create-button', function () {
         console.log('clicked');
         $('#createForm').toggle();
+         $('#new-form').html(`<fieldset>
+            <legend class="section-header">Create a form</legend>
+            <label>Doctor:</label><br>
+            <input type="text" id="doctor" name="doctor" required><br>
+                <label>Specialty:</label><br>
+                <input type="text" id="specialty" name="specialty" required><br>
+                <label>id:</label><br>
+                 <input type="number" id="id" name="id" required><br>
+                 <label>Questions:</label><br>
+                <input type = "text" id = "questions" name = "questions" required><br>
+                <button type="submit " id="new-submit-button ">Submit</button>
+            </fieldset>`);
         })
     };
 
