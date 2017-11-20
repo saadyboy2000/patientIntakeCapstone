@@ -89,7 +89,7 @@ function postNewForm() {
 
 //display all forms
 function displayForms() {
-    $('#nav-view-button').on('click', function () {
+    $('.view-button').on('click', function () {
     $.ajax({
             method: 'GET',
             url: FORM_URL
@@ -142,7 +142,7 @@ function displayFormById() {
                                 </div>
                                 <button id="edit-button" class="form-button">Edit</button>
                                 <button id="delete-button" class="form-button">Delete</button>
-                                <button id="nav-view-button" class="form-button">View All</button>`;
+                                <button id="nav-view-button" class="view-button">View All</button>`;
 
                /* htmlOutput += '<div class="current-form">';
                 htmlOutput += '<input type="hidden" class="formID" value="';
