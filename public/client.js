@@ -166,6 +166,7 @@ function displayFormById() {
                 htmlOutput += '<button id="nav-view-button" class="form-button">View All</button>'; */
 
                 $('#forms').html(htmlOutput);
+                displayForms();
             })
             .fail(function (jqXHR, error, errorThrown) {
                 console.log(jqXHR);
