@@ -67,7 +67,7 @@ navigation {
    border-top-color: #1b435e;
    background: #1b435e;
    }
-}
+
 #nav-create-button{
     border-top: 1px solid #96d1f8;
    background: #65a9d7;
@@ -127,8 +127,13 @@ navigation {
    color: #ccc;
 }   
 
-#nav-create-button:active, #nav-view-button:active {
+ #nav-view-button:active {
    border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
+   #nav-create-button:active{
+    border-top-color: #1b435e;
    background: #1b435e;
    }
 
