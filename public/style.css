@@ -103,7 +103,7 @@ navigation {
    color: #ccc;
 }   
 
-#nav-create-button, #nav-view-button:active {
+#nav-create-button:active, #nav-view-button:active {
    border-top-color: #1b435e;
    background: #1b435e;
    }
