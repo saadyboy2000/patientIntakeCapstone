@@ -2,9 +2,13 @@
    
 }
 
-*{
+head{
   background: #45ac8b no-repeat center fixed;
   background-size: cover;
+}
+
+body{
+  background: #45ac8b  
 }
 
 header {
