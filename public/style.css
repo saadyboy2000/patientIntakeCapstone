@@ -36,7 +36,7 @@ navigation {
 }
 
 
-.droptn{
+.dropbtn{
     .button {
    border-top: 1px solid #96d1f8;
    background: #6567d4;
@@ -59,12 +59,12 @@ navigation {
    text-decoration: none;
    vertical-align: middle;
    }
-.droptn:hover {
+.dropbtn:hover {
    border-top-color: #28597a;
    background: #28597a;
    color: #ccc;
    }
-.droptn:active {
+.dropbtn:active {
    border-top-color: #1b435e;
    background: #1b435e;
    }
