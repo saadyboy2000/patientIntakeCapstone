@@ -15,7 +15,7 @@ header {
      text-align: center;
 }
 
-navigation {
+.row {
   position: relative;
     left: 30px;
 }
