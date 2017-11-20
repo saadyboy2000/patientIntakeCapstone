@@ -20,7 +20,7 @@ navigation {
     left: 30px;
 }
 
-#logo {
+title {
   font-family: 'Open Sans', sans-serif;
   color: #555;
   text-decoration: none;
@@ -32,7 +32,7 @@ navigation {
   text-shadow: #EDEDED 3px 2px 0;
   position: relative;
 }
-#logo:after {
+title:after {
   content:"dreamdealer";
   position: absolute;
   left: 8px;
