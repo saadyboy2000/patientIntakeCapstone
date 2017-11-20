@@ -6,3 +6,9 @@
   background: #45ac8b no-repeat center fixed;
   background-size: cover;
 }
+
+header {
+    position:absolute;
+top:20px;
+right:20px
+}
