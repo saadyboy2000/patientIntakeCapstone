@@ -30,3 +30,7 @@ navigation {
   position: relative;
     left: 30px;
 }
+
+*form-entries {
+    background: white;
+}
