@@ -23,6 +23,7 @@ navigation {
 #createForm {
   position: relative;
     left: 30px;
+    box-sizing: border-box;
 }
 
 #form-container{
