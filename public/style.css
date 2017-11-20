@@ -35,11 +35,9 @@ navigation {
     left: 30px;
 }
 
-#form-entries {
-    background: white;
-}
 
-input[type=button], input[type=submit], input[type=reset] {
+
+#current-button {
     background-color: #4CAF50;
     border: none;
     color: white;
