@@ -10,7 +10,7 @@ let NEW_FORM_URL = '/forms/new';
 }
 */
 function startPage(){
-    $('.start-page').on('click', function(){
+    $('.start-page').on('submit', function(){
         ('.welcome-screen').remove();
         ('.hidden-elements').removeClass('hidden-elements');
     })
