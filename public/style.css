@@ -29,8 +29,8 @@ header {
 }
 
 #newForm{
+    border: none;
     outline: none;
-    text-decoration: none;
 
 }
 
