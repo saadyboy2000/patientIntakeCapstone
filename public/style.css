@@ -44,12 +44,12 @@ header {
 
 .dropbtn{
     border-top: 1px solid #96d1f8;
-   background: #6567d4;
-   background: -webkit-gradient(linear, left top, left bottom, from(#3e4e9c), to(#6567d4));
-   background: -webkit-linear-gradient(top, #3e4e9c, #6567d4);
-   background: -moz-linear-gradient(top, #3e4e9c, #6567d4);
-   background: -ms-linear-gradient(top, #3e4e9c, #6567d4);
-   background: -o-linear-gradient(top, #3e4e9c, #6567d4);
+   background: #65a9d7;
+   background: -webkit-gradient(linear, left top, left bottom, from(#3e779d), to(#65a9d7));
+   background: -webkit-linear-gradient(top, #3e779d, #65a9d7);
+   background: -moz-linear-gradient(top, #3e779d, #65a9d7);
+   background: -ms-linear-gradient(top, #3e779d, #65a9d7);
+   background: -o-linear-gradient(top, #3e779d, #65a9d7);
    padding: 7.5px 15px;
    -webkit-border-radius: 7px;
    -moz-border-radius: 7px;
