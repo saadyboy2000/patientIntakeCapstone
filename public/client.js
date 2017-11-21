@@ -252,7 +252,7 @@ function updateForm() {
                 <h2>Specialty: </h2>
                 <p class="form-specialty">${newDataInput.specialty}</p><br><br>
                  <h2>Max intended age: </h2>
-                <p class="form-age">${newDataInput.id}</p><br><br>
+                <p class="form-age">${newDataInput.age}</p><br><br>
                 <h2>questions: </h2>
                 <p class="form-questions">${newDataInput.questions}</p><br><br>
                 </div>
