@@ -30,6 +30,8 @@ header {
 
 #newForm{
     outline: none;
+    text-decoration: none;
+
 }
 
 #form-container{
