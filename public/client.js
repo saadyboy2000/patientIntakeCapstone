@@ -259,26 +259,7 @@ function updateForm() {
                 <button id="edit-button" class="nav-button">Edit</button>
                 <button id="delete-button" class="nav-button">Delete</button>
                 <button id="nav-view-button" class="view-button">View All</button>`);
-            /*htmlOutput += '<div class="current-form">';
-            htmlOutput += '<input type="hidden" class="formID" value="';
-            htmlOutput += idParameter;
-            htmlOutput += '">';
-            htmlOutput += '<h2>Doctor: </h2>';
-            htmlOutput += '<p class="form-doctor">';
-            htmlOutput += newDataInput.doctor;
-            htmlOutput += '</p><br><br>';
-            htmlOutput += '<h2>Specialty: </h2>';
-            htmlOutput += '<p class="form-doctor">';
-            htmlOutput += newDataInput.specialty;
-            htmlOutput += '</p><br><br>';
-            htmlOutput += '<h2>questions: </h2>';
-            htmlOutput += '<p class="form-questions">';
-            htmlOutput += newDataInput.questions;
-            htmlOutput += '</p><br><br>';
-            htmlOutput += '</div>';
-            htmlOutput += '<button id="edit-button" class="form-button">Edit</button>';
-            htmlOutput += '<button id="delete-button" class="form-button">Delete</button>';
-            htmlOutput += '<button id="nav-view-button" class="form-button">View All</button>';
+           /*
 
             $('#forms').html(htmlOutput); */
 
@@ -340,36 +321,7 @@ function handleUpdateForm() {
     });
 }
 
-//navigation buttons
 
-/* function handleNavCreateButton() {
-    $('.dropdown-content').on('submit', '#nav-create-button', function () {
-        $('#new-form :input').val("");
-        $('#new-entry').removeClass('hide-display').html(` <form method="post" id="new-form">
-            <fieldset>
-            <legend class="section-header">Write a form</legend>
-            <label>Doctor:</label><br>
-            <input type="text" id="doctor" name="doctor" required><br>
-            <label>Specialty:</label><br>
-            <input type="text" id="specialty" name="specialty" required><br>
-            <label>Questions:</label><br>
-            <input type = "text" name="questions" id="questions" required><br> 
-            <button type="submit" id="new-submit-button">Submit</button>
-            </fieldset>`);
-        $('#form-container').addClass('hide-display');
-        postNewForm();
-    })
-}
-*/
-/*
-function handleNavViewButton() {
-    $('#nav-view-button').click(function () {
-        displayReflections();
-        $('#form-container').removeClass('hide-display');
-        $('#new-form').addClass('hide-display');
-        $('.start-page').addClass('hide-display');
-    })
-}*/
 
 
 function navCreateButton() {
@@ -395,13 +347,14 @@ function navCreateButton() {
 
 //When the user clicks on the button,
 //toggle between hiding and showing the dropdown content
-
+/*
 function showMenu() {
     $('.dropbtn').click(function () {
         console.log('clicked');
         $('#myDropdown').toggle();
     })
 };
+*/
 
 /*function hideMenu() {
     //    $(document).click(function (e) {
