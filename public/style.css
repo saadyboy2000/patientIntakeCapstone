@@ -3,7 +3,7 @@
 }
 
 head{
-  background: #45ac8b no-repeat center fixed;
+  background-image: url("1.jpg") no-repeat center fixed;
   background-size: cover;
 }
 
