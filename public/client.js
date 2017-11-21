@@ -225,12 +225,14 @@ function retrieveForm() {
 function updateForm() {
     let idParameter = $('form').find('.formID').val();
     let doctorInput = $('form').parent().find('#doctor').val();
+    let ageInput = $('form').parent().find('#age').val();
     let specialtyInput = $('form').parent().find('#specialty').val();
     let questionsInput = $('form').parent().find('#questions').val();
     let newDataInput = {
         'doctor': doctorInput,
         'specialty': specialtyInput,
         'questions': questionsInput,
+        'age' : ageInput
     };
 
     let htmlOutput = "";
