@@ -46,9 +46,9 @@ function postNewForm() {
                 <h2>Questions: </h2>
                 <p class="form-questions">${data.questions}</p><br><br>
                 </div>
-                <button id="edit-button" class="form-button">Edit</button>
-                <button id="delete-button" class="form-button">Delete</button>
-                <button id="nav-view-button" class="form-button">View All</button>`;
+                <button id="edit-button" class="nav-button">Edit</button>
+                <button id="delete-button" class="nav-button">Delete</button>
+                <button id="nav-view-button" class="nav-button">View All</button>`;
 
 
                /* htmlOutput += '<div class="current-form">';
@@ -106,9 +106,9 @@ function displayForms() {
                         <p class="reflection-info">Doctor:</p> <p class="form-doctor">${forms.doctor}</p><br><br>
                         <p class="reflection-info">Specialty:</p> <p class="form-specialty"> ${forms.specialty}</p><br><br>
                         <div id="truncate"><p class="reflection-info">Questions:</p> <p class="form-question"> ${forms.questions}</p></div><br><br>
-                        <button id="edit-button" class="form-button">Edit</button>
-                        <button id="delete-button" class="form-button" data-form-id="${forms._id}">Delete</button>
-                        <button id="current-button" class="form-button">View</button>
+                        <button id="edit-button" class="nav-button">Edit</button>
+                        <button id="delete-button" class="nav-button" data-form-id="${forms._id}">Delete</button>
+                        <button id="current-button" class="nav-button">View</button>
                         </div>`;
             });
             $('#forms').html(formInput);
@@ -140,9 +140,9 @@ function displayFormById() {
                                 <h2>Questions: </h2>
                                 <p class="form-question">${data.questions}</p><br><br>
                                 </div>
-                                <button id="edit-button" class="form-button">Edit</button>
-                                <button id="delete-button" class="form-button">Delete</button>
-                                <button id="nav-view-button" class="view-button">View All</button>`;
+                                <button id="edit-button" class="nav-button">Edit</button>
+                                <button id="delete-button" class="nav-button">Delete</button>
+                                <button id="nav-view-button" class="nav-button">View All</button>`;
 
                /* htmlOutput += '<div class="current-form">';
                 htmlOutput += '<input type="hidden" class="formID" value="';
@@ -245,9 +245,9 @@ function updateForm() {
                 <h2>questions: </h2>
                 <p class="form-questions">${newDataInput.questions}</p><br><br>
                 </div>
-                <button id="edit-button" class="form-button">Edit</button>
-                <button id="delete-button" class="form-button">Delete</button>
-                <button id="nav-view-button" class="form-button">View All</button>`);
+                <button id="edit-button" class="nav-button">Edit</button>
+                <button id="delete-button" class="nav-button">Delete</button>
+                <button id="nav-view-button" class="nav-button">View All</button>`);
             /*htmlOutput += '<div class="current-form">';
             htmlOutput += '<input type="hidden" class="formID" value="';
             htmlOutput += idParameter;
