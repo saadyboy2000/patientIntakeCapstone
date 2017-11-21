@@ -43,12 +43,14 @@ function postNewForm() {
                 <p class="form-doctor">${data.doctor}</p><br><br>
                 <h2>Specialty: </h2>
                 <p class="form-specialty">${data.specialty}</p><br><br>
+                <h2>Max intended age: </h2>
+                <p class="form-id">${data.id}</p><br><br>
                 <h2>Questions: </h2>
                 <p class="form-questions">${data.questions}</p><br><br>
                 </div>
                 <button id="edit-button" class="nav-button">Edit</button>
                 <button id="delete-button" class="nav-button">Delete</button>
-                <button id="nav-view-button" class="nav-button">View All</button>`;
+                <button id="nav-view-button" class="view-button">View All</button>`;
 
 
                /* htmlOutput += '<div class="current-form">';
@@ -105,6 +107,7 @@ function displayForms() {
                         <input type="hidden" class="formID" value="${forms._id}">
                         <p class="reflection-info">Doctor:</p> <p class="form-doctor">${forms.doctor}</p><br><br>
                         <p class="reflection-info">Specialty:</p> <p class="form-specialty"> ${forms.specialty}</p><br><br>
+                        <div id="truncate"><p class="reflection-info">Max age intended:</p> <p class="form-question"> ${forms.id}</p></div><br><br>
                         <div id="truncate"><p class="reflection-info">Questions:</p> <p class="form-question"> ${forms.questions}</p></div><br><br>
                         <button id="edit-button" class="nav-button">Edit</button>
                         <button id="delete-button" class="nav-button" data-form-id="${forms._id}">Delete</button>
@@ -137,12 +140,14 @@ function displayFormById() {
                                 <p class="form-doctor"> ${data.doctor}</p><br><br>
                                 <h2>Specialty: </h2>
                                 <p class="form-specialty"> ${data.specialty}</p><br><br>
+                                 <h2>Max age intended: </h2>
+                                <p class="form-age">${data.id}</p><br><br>
                                 <h2>Questions: </h2>
                                 <p class="form-question">${data.questions}</p><br><br>
                                 </div>
                                 <button id="edit-button" class="nav-button">Edit</button>
                                 <button id="delete-button" class="nav-button">Delete</button>
-                                <button id="nav-view-button" class="nav-button">View All</button>`;
+                                <button id="nav-view-button" class="view-button">View All</button>`;
 
                /* htmlOutput += '<div class="current-form">';
                 htmlOutput += '<input type="hidden" class="formID" value="';
@@ -199,6 +204,8 @@ function retrieveForm() {
                 <input type="text" id="doctor" name="doctor" required value="${data.doctor}"><br>
                 <label>Specialty:</label><br>
                 <input type="text" id="specialty" name="specialty" value="${data.specialty}" required><br>
+                 <label>Max age intended:</label><br>
+                <input type = "number" name="age" id="age" value="${data.id}"><br>
                 <label>Questions:</label><br>
                 <input type = "text" name="questions" id="questions" value="${data.questions}"><br>
                 <button type="submit" id="update-button">Update</button>
@@ -242,12 +249,14 @@ function updateForm() {
                 <p class="form-doctor">${newDataInput.doctor}</p><br><br>
                 <h2>Specialty: </h2>
                 <p class="form-specialty">${newDataInput.specialty}</p><br><br>
+                 <h2>Max intended age: </h2>
+                <p class="form-age">${newDataInput.id}</p><br><br>
                 <h2>questions: </h2>
                 <p class="form-questions">${newDataInput.questions}</p><br><br>
                 </div>
                 <button id="edit-button" class="nav-button">Edit</button>
                 <button id="delete-button" class="nav-button">Delete</button>
-                <button id="nav-view-button" class="nav-button">View All</button>`);
+                <button id="nav-view-button" class="view-button">View All</button>`);
             /*htmlOutput += '<div class="current-form">';
             htmlOutput += '<input type="hidden" class="formID" value="';
             htmlOutput += idParameter;
@@ -371,7 +380,7 @@ function navCreateButton() {
             <input type="text" id="doctor" name="doctor" required><br>
                 <label>Specialty:</label><br>
                 <input type="text" id="specialty" name="specialty" required><br>
-                <label>id:</label><br>
+                <label>Max intended age:</label><br>
                  <input type="number" id="id" name="id" required><br>
                  <label>Questions:</label><br>
                 <input type = "text" id = "questions" name = "questions" required><br>
