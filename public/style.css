@@ -8,8 +8,7 @@
 }
 */
 body{
-   background-image: url("https://www.pixeden.com/media/k2/galleries/220/003-wood-melamine-subttle-pattern-background-pat.jpg") no-repeat center fixed;
-  background-size: cover;
+   background-image: url("https://www.pixeden.com/media/k2/galleries/220/003-wood-melamine-subttle-pattern-background-pat.jpg");
 }
 
 header {
