@@ -10,7 +10,7 @@ let NEW_FORM_URL = '/forms/new';
 }
 */
 function startPage(){
-    $('.start-page').on('submit', function(){
+    $('.start-page').on('click', function(){
         ('.welcome-screen').remove();
         ('.hidden-elements').removeClass('hidden-elements');
     })
@@ -376,6 +376,7 @@ function showMenu() {
 
 
 $(function () {
+    startPage();
     postNewForm();
     handleDeleteForms();
     handleDisplayForms();
