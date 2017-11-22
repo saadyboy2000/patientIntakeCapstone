@@ -12,8 +12,14 @@
   text-align: center;
 }
 
-.start-pahe{
-  text-align: center;
+.start-page{
+  margin-top: 15px;
+box-sizing: border-box;
+text-align: center;
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
 }
 
 .screenshots{
