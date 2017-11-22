@@ -8,6 +8,10 @@
   background-size: cover; https://wallpapercave.com/wp/kDU7VPe.gif
 }
 */
+.welcome-screen{
+  text-align: center;
+}
+
 body{
    background-image: url("https://www.pixeden.com/media/k2/galleries/220/003-wood-melamine-subttle-pattern-background-pat.jpg");
 }
