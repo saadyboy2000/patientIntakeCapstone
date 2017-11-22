@@ -12,6 +12,10 @@
   text-align: center;
 }
 
+.screenshots{
+  display: inline-block;
+}
+
 body{
    background-image: url("https://www.pixeden.com/media/k2/galleries/220/003-wood-melamine-subttle-pattern-background-pat.jpg");
 }
