@@ -8,8 +8,13 @@
   background-size: cover; https://wallpapercave.com/wp/kDU7VPe.gif
 }
 */
-.welcome-screen, .start-page{
+.welcome-screen{
   text-align: center;
+}
+
+.start-page {
+  display:block;
+  text-align:center;
 }
 
 .screenshots{
