@@ -8,9 +8,14 @@
   background-size: cover; https://wallpapercave.com/wp/kDU7VPe.gif
 }
 */
+
+*{
+  font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+}
+
 .welcome-screen{
   text-align: center;
-  font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif;
+  /*font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif; */
 }
 
 .start-page{
