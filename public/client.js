@@ -304,7 +304,7 @@ function navCreateButton() {
                  <input type="number" id="id" name="id" required><br>
                  <label>Questions:</label><br>
                  <input type = "text" id = "questions" name = "questions" required><br>
-                <button type="submit " id="new-submit-button ">Submit</button>
+                <button type="submit " id="new-submit-button">Submit</button>
             </fieldset>`);
         })
     };
