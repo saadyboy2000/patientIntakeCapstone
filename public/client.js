@@ -303,7 +303,7 @@ function navCreateButton() {
                 <label>Max intended age:</label><br>
                  <input type="number" id="id" name="id" required><br>
                  <label>Questions:</label><br>
-                <textarea id = "questions" name = "questions" required></textarea><br>
+                 <input type = "text" id = "questions" name = "questions" required><br>
                 <button type="submit " id="new-submit-button ">Submit</button>
             </fieldset>`);
         })
