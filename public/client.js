@@ -212,7 +212,7 @@ function retrieveForm() {
                  <label>Max age intended:</label><br>
                 <input type = "number" name="age" id="age" value="${data.id}"><br>
                 <label>Questions:</label><br>
-                <input type = "text" name="questions" id="questions" value="${data.questions}"><br>
+                <textarea name="questions" id="questions" value="${data.questions}"></textarea><br>
                 <button type="submit" id="update-button">Update</button>
                 </fieldset>
                 </form>`)
