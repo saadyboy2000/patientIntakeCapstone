@@ -350,6 +350,6 @@ $(function () {
     //handleNavViewButton();
     //handleNavResourcesButton();
     //handleNewFormButton();
-    showMenu();
+    //showMenu();
     //hideMenu();
 })
