@@ -58,26 +58,7 @@ function postNewForm() {
                 <button id="nav-view-button" class="view-button">View All</button>`;
 
 
-               /* htmlOutput += '<div class="current-form">';
-                htmlOutput += '<input type="hidden" class="formID" value="';
-                htmlOutput += data._id;
-                htmlOutput += '">';
-                htmlOutput += '<h2>Doctor: </h2>';
-                htmlOutput += '<p class="form-doctor">';
-                htmlOutput += data.doctor;
-                htmlOutput += '</p><br><br>';
-                htmlOutput += '<h2>Specialty: </h2>';
-                htmlOutput += '<p class="form-specialty">';
-                htmlOutput += data.specialty;
-                htmlOutput += '</p><br><br>';
-                htmlOutput += '<h2>Questions: </h2>';
-                htmlOutput += '<p class="form-questions">';
-                htmlOutput += data.questions;
-                htmlOutput += '</p><br><br>';
-                htmlOutput += '</div>';
-                htmlOutput += '<button id="edit-button" class="form-button">Edit</button>';
-                htmlOutput += '<button id="delete-button" class="form-button">Delete</button>';//what is issue with this button?
-                htmlOutput += '<button id="nav-view-button" class="form-button">View All</button>'; */
+             
 
                 $('#forms').html(htmlOutput);
                 $('#new-form :input').val("");
@@ -192,7 +173,7 @@ function retrieveForm() {
                  <label>Max age intended:</label><br>
                 <input type = "number" name="age" id="age" value="${data.id}"><br>
                 <label>Questions:</label><br>
-                <textarea id = "questions" name = "questions" required value="${data.questions}"></textarea><br>
+               <input type = "text" name="questions" id="questions" value="${data.questions}"><br>
                 <button type="submit" id="update-button">Update</button>
                 </fieldset>
                 </form>`)
