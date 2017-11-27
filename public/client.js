@@ -173,7 +173,7 @@ function retrieveForm() {
                  <label>Max age intended:</label><br>
                 <input type = "number" name="age" id="age" value="${data.id}"><br>
                 <label>Questions:</label><br>
-               <input type = "text" name="questions" id="questions" value="${data.questions}"><br>
+               <textarea id = "questions" name = "questions" required>${data.questions}</textarea><br>
                 <button type="submit" id="update-button">Update</button>
                 </fieldset>
                 </form>`)
@@ -303,7 +303,7 @@ function navCreateButton() {
                 <label>Max intended age:</label><br>
                  <input type="number" id="id" name="id" required><br>
                  <label>Questions:</label><br>
-                 <input type = "text" id = "questions" name = "questions" required><br>
+                <textarea id = "questions" name = "questions" required></textarea><br>
                 <button type="submit " id="new-submit-button">Submit</button>
             </fieldset>`);
         })
