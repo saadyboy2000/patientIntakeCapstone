@@ -234,3 +234,9 @@ fieldset{
 .current-form{
 
 }
+
+#new-submit-button{
+  border-top-color: #785b29;
+   background: #785b29;
+   color: #ccc;
+}
