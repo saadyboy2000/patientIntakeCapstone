@@ -236,7 +236,7 @@ function updateForm() {
             console.log(jqXHR);
             console.log(error);
             console.log(errorThrown);
-            $('forms').html('No forms found'); 
+            $('forms').html('No forms found');
         })
 }
 
