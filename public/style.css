@@ -234,6 +234,14 @@ fieldset{
  
 }
 
+#new-submit-button{
+margin-top: 5px;
+}
+
+#update-button{
+margin-top: 5px;
+}
+
 #new-submit-button:hover{
  
    background: #CD853F;
