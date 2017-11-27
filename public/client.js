@@ -228,7 +228,7 @@ function updateForm() {
            /*
 
             $('#forms').html(htmlOutput); */
-
+            displayForms();
             $('#new-entry').addClass('hide-display');
             $('#form-container').removeClass('hide-display');
         })
