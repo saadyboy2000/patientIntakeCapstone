@@ -185,3 +185,12 @@ fieldset{
 .hidden-elements{
     display:none;
 }
+
+#questions {
+  width: 300px;
+  height: 150px;
+}
+
+.current-form{
+
+}
