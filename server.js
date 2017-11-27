@@ -76,7 +76,7 @@ Forms
         .create({
             doctor: req.body.doctor,
             specialty: req.body.specialty,
-            id: req.body.id,
+            age: req.body.age,
             questions: req.body.questions,
         })
         .then(forms => res.status(201).json(forms))
