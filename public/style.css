@@ -236,13 +236,11 @@ fieldset{
 }
 
 #new-submit-button:hover{
-  border-top-color: #785b29;
-   background: #785b29;
-   color: #ccc;
+ 
+   background: #CD853F;
+
 }
 
 #update-button:hover{
-  border-top-color: #785b29;
-   background: #785b29;
-   color: #ccc;
+  background: #CD853F;
 }
