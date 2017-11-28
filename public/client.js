@@ -22,13 +22,13 @@ function postNewForm() {
         e.preventDefault();
         let doctorInput = $(this).parent().find('#doctor').val();
         let specialtyInput = $(this).parent().find('#specialty').val();
-        let ageInput = $(this).parent().find('#age').val();
+         let idInput = $(this).parent().find('#id').val();
         let questionsInput = $(this).parent().find('#questions').val();
 
         let dataInput = {
             'doctor': doctorInput,
             'specialty': specialtyInput,
-            'age': ageInput,
+            'id': idInput,
             'questions': questionsInput,
         };
 
@@ -49,7 +49,7 @@ function postNewForm() {
                 <h2>Specialty: </h2>
                 <p class="form-specialty">${data.specialty}</p><br><br>
                 <h2>Max intended age: </h2>
-                <p class="form-id">${data.age}</p><br><br>
+                <p class="form-id">${data.id}</p><br><br>
                 <h2>Questions: </h2>
                 <p class="form-questions">${data.questions}</p><br><br>
                 </div>
@@ -93,7 +93,7 @@ function displayForms() {
                         <input type="hidden" class="formID" value="${forms._id}">
                         <p class="reflection-info">Doctor:</p> <p class="form-doctor">${forms.doctor}</p><br><br>
                         <p class="reflection-info">Specialty:</p> <p class="form-specialty"> ${forms.specialty}</p><br><br>
-                        <div id="truncate"><p class="reflection-info">Max age intended:</p> <p class="form-question"> ${forms.age}</p></div><br><br>
+                        <div id="truncate"><p class="reflection-info">Max age intended:</p> <p class="form-question"> ${forms.id}</p></div><br><br>
                         <div id="truncate"><p class="reflection-info">Questions:</p> <p class="form-question"> ${forms.questions}</p></div><br><br>
                         <button id="edit-button" class="nav-button">Edit</button>
                         <button id="delete-button" class="nav-button" data-form-id="${forms._id}">Delete</button>
@@ -127,7 +127,7 @@ function displayFormById() {
                                 <h2>Specialty: </h2>
                                 <p class="form-specialty"> ${data.specialty}</p><br><br>
                                  <h2>Max age intended: </h2>
-                                <p class="form-age">${data.age}</p><br><br>
+                                <p class="form-age">${data.id}</p><br><br>
                                 <h2>Questions: </h2>
                                 <p class="form-question">${data.questions}</p><br><br>
                                 </div>
@@ -171,7 +171,7 @@ function retrieveForm() {
                 <label>Specialty:</label><br>
                 <input type="text" id="specialty" name="specialty" value="${data.specialty}" required><br>
                  <label>Max age intended:</label><br>
-                <input type = "number" name="age" id="age" value="${data.age}"><br>
+                <input type = "number" name="age" id="age" value="${data.id}"><br>
                 <label>Questions:</label><br>
                <textarea id = "questions" name = "questions" required>${data.questions}</textarea><br>
                 <button type="submit" id="update-button">Update</button>
@@ -301,7 +301,7 @@ function navCreateButton() {
                 <label>Specialty:</label><br>
                 <input type="text" id="specialty" name="specialty" required><br>
                 <label>Max intended age:</label><br>
-                 <input type="number" id="age" name="id" required><br>
+                 <input type="number" id="id" name="id" required><br>
                  <label>Questions:</label><br>
                 <textarea id = "questions" name = "questions" required></textarea><br>
                 <button type="submit " id="new-submit-button">Submit</button>
