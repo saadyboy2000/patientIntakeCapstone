@@ -22,7 +22,7 @@ function postNewForm() {
         e.preventDefault();
         let doctorInput = $(this).parent().find('#doctor').val();
         let specialtyInput = $(this).parent().find('#specialty').val();
-         let idInput = $(this).parent().find('#id').val();
+        let idInput = $(this).parent().find('#id').val();
         let questionsInput = $(this).parent().find('#questions').val();
 
         let dataInput = {
@@ -307,7 +307,6 @@ function navCreateButton() {
                 <button type="submit " id="new-submit-button">Submit</button>
             </fieldset>`);
         })
-    postNewForm();
     };
 
 
