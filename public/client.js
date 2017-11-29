@@ -307,6 +307,7 @@ function navCreateButton() {
                 <button type="submit " id="new-submit-button">Submit</button>
             </fieldset>`);
         })
+        postNewForm();
     };
 
 
