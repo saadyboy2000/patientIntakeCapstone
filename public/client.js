@@ -64,6 +64,7 @@ function postNewForm() {
                 $('#new-form :input').val("");
                 $('#new-formEntry').addClass('hide-display');
                 $('#form-container').removeClass('hide-display');
+                displayForms();
             })
             .fail(function (jqXHR, error, errorThrown) {
                 console.log(jqXHR);
