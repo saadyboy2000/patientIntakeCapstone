@@ -52,6 +52,11 @@
   /*font-family: Baskerville, "Baskerville Old Face", "Goudy Old Style", Garamond, "Times New Roman", serif; */
 }
 
+.dropdown{
+  text-align: center;
+}
+
+
 .start-page{
   margin-top: 15px;
 box-sizing: border-box;
@@ -97,7 +102,7 @@ header {
 
 #createForm {
   position: relative;
-    left: 30px;
+   text-align: center;
 }
 
 #newForm{
@@ -112,7 +117,7 @@ fieldset{
 
 #form-container{
   position: relative;
-    left: 30px;
+    text-align: center;
 }
 
 #forms{
