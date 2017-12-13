@@ -13,7 +13,6 @@ function startPage(){
     $('.start-page').on('click', function(){
         $('.welcome-screen').remove();
         $('.hidden-elements').removeClass('hidden-elements');
-         $('form-container').addClass("hide");
     })
 }
 
