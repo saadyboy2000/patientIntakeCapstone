@@ -79,6 +79,7 @@ function postNewForm() {
 //display all forms
 function displayForms() {
     $('.view-button').on('click', function () {
+        $('#createForm').addClass("hide");
     $.ajax({
             method: 'GET',
             url: FORM_URL
@@ -294,7 +295,7 @@ function handleUpdateForm() {
 function navCreateButton() {
     $('.dropdown-content').on('click', '#nav-create-button', function () {
         console.log('clicked');
-        //$('#createForm').toggle();
+         $('#createForm').removeClass("hide");
          $('#new-form').html(`<fieldset>
             <legend class="section-header">Create a form</legend>
             <label>Doctor:</label><br>
