@@ -155,8 +155,8 @@ function displayFormById() {
 //first retrieve the post by id and put data in form
 function retrieveForm() {
     $('#forms').on('click', '#edit-button', function () {
-        /*$('#new-formEntry').removeClass('hide-display');
-        $('#form-container').addClass('hide-display'); */
+         $('#createForm').removeClass("hide");
+        //$('#form-container').addClass('hide-display'); */
         let idParameter = $(this).parent().find('.formID').val();
         $.ajax({
                 method: 'GET',
