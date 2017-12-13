@@ -150,6 +150,7 @@ function displayFormById() {
     })
 }
 
+//update the selected reflection
 //first retrieve the post by id and put data in form
 function retrieveForm() {
     $('#forms').on('click', '#edit-button', function () {
@@ -226,7 +227,6 @@ function updateForm() {
                 <button id="delete-button" class="nav-button">Delete</button>
                 <button id="nav-view-button" class="view-button">View All</button>`);
            /*
-
             $('#forms').html(htmlOutput); */
             displayForms();
             $('#new-entry').addClass('hide-display');
