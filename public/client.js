@@ -227,6 +227,7 @@ function updateForm() {
                 <button id="delete-button" class="nav-button">Delete</button>
                 <button id="nav-view-button" class="view-button">View All</button>`);
            /*
+
             $('#forms').html(htmlOutput); */
             displayForms();
             $('#new-entry').addClass('hide-display');
