@@ -238,11 +238,17 @@ fieldset{
 }
 
 .current-form{
+position: relative;
+    padding: 4px;
+}
 
- width:22px;
-  height:22px;
- outline:1px solid black;
-  border: inset solid 1px black;
+.current-form:after {
+   position: absolute;
+    top: -3px;
+    left: -3px;
+    bottom: -3px;
+    right: -3px;
+    border: 1px #888 solid;
 }
 
 #new-submit-button{
