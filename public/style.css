@@ -252,6 +252,17 @@ fieldset{
    vertical-align: middle;
    }
 
+   #nav-create-button:hover{
+     border-top-color: #5d68ba;
+   background: #5d68ba;
+   color: #fffaff;
+   }
+
+   #nav-create-button:active{
+  border-top-color: #1b435e;
+   background: #1b435e;
+   }
+
 
  #nav-view-button:hover {
     border-top-color: #5d68ba;
@@ -295,6 +306,7 @@ width: 50%;
 
 
 #new-submit-button{
+  margin-top: 5px;
   border-top: 1px solid #54606e;
    background: #5891db;
    background: -webkit-gradient(linear, left top, left bottom, from(#452ade), to(#5891db));
@@ -318,6 +330,7 @@ width: 50%;
 }
 
 #update-button{
+margin-top: 5px;  
 border-top: 1px solid #54606e;
    background: #5891db;
    background: -webkit-gradient(linear, left top, left bottom, from(#452ade), to(#5891db));
