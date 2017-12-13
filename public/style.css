@@ -183,23 +183,23 @@ fieldset{
    }
 
 .nav-button{
-   border-top: 1px solid #54606e;
+    border-top: 1px solid #54606e;
    background: #5891db;
-   background: -webkit-gradient(linear, left top, left bottom, from(#1040cf), to(#5891db));
-   background: -webkit-linear-gradient(top, #1040cf, #5891db);
-   background: -moz-linear-gradient(top, #1040cf, #5891db);
-   background: -ms-linear-gradient(top, #1040cf, #5891db);
-   background: -o-linear-gradient(top, #1040cf, #5891db);
-   padding: 15.5px 31px;
-   -webkit-border-radius: 27px;
-   -moz-border-radius: 27px;
-   border-radius: 27px;
+   background: -webkit-gradient(linear, left top, left bottom, from(#452ade), to(#5891db));
+   background: -webkit-linear-gradient(top, #452ade, #5891db);
+   background: -moz-linear-gradient(top, #452ade, #5891db);
+   background: -ms-linear-gradient(top, #452ade, #5891db);
+   background: -o-linear-gradient(top, #452ade, #5891db);
+   padding: 6px 12px;
+   -webkit-border-radius: 28px;
+   -moz-border-radius: 28px;
+   border-radius: 28px;
    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
    box-shadow: rgba(0,0,0,1) 0 1px 0;
    text-shadow: rgba(0,0,0,.4) 0 1px 0;
    color: white;
-   font-size: 20px;
+   font-size: 12px;
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
