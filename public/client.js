@@ -150,7 +150,6 @@ function displayFormById() {
     })
 }
 
-//update the selected reflection
 //first retrieve the post by id and put data in form
 function retrieveForm() {
     $('#forms').on('click', '#edit-button', function () {
