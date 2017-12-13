@@ -237,7 +237,7 @@ fieldset{
   height: 150px;
 }
 
-.current-form{
+#form-entries{
 position: relative;
   border: 1px solid red;
 }
