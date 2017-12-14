@@ -19,6 +19,8 @@ function startPage(){
 //post a new form
 function postNewForm() {
     $('#new-form').on('submit', function (e) {
+        $('#form-container').removeClass("hide");
+        $('#createForm').addClass("hide");
         e.preventDefault();
         let doctorInput = $(this).parent().find('#doctor').val();
         let specialtyInput = $(this).parent().find('#specialty').val();
