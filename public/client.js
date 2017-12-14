@@ -174,7 +174,7 @@ function retrieveForm() {
                 <label>Specialty:</label><br>
                 <input type="text" id="specialty" name="specialty" value="${data.specialty}" required><br>
                  <label>What is the age limit on this form?:</label><br>
-                <input type = "number" name="age" id="age" value="${data.id}"><br>
+                <input type = "number" name="age" id="id" value="${data.id}"><br>
                 <label>Questions:</label><br>
                <textarea id = "questions" name = "questions" required>${data.questions}</textarea><br>
                 <button type="submit" id="update-button">Update</button>
@@ -194,7 +194,7 @@ function retrieveForm() {
 function updateForm() {
     let idParameter = $('form').find('.formID').val();
     let doctorInput = $('form').parent().find('#doctor').val();
-    let ageInput = $('form').parent().find('#age').val();
+    let ageInput = $('form').parent().find('#id').val();
     let specialtyInput = $('form').parent().find('#specialty').val();
     let questionsInput = $('form').parent().find('#questions').val();
     let newDataInput = {
@@ -221,7 +221,7 @@ function updateForm() {
                 <h2>Specialty: </h2>
                 <p class="form-specialty">${newDataInput.specialty}</p><br><br>
                  <h2>Max intended age: </h2>
-                <p class="form-age">${newDataInput.age}</p><br><br>
+                <p class="form-age">${newDataInput.id}</p><br><br>
                 <h2>questions: </h2>
                 <p class="form-questions">${newDataInput.questions}</p><br><br>
                 </div>
