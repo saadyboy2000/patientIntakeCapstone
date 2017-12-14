@@ -124,6 +124,8 @@
 
 .screenshot{
   display: inline-block;
+  height: 140%;
+  width: 140%;
 }
 
 .img{
