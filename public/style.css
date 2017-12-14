@@ -21,6 +21,22 @@
   display:none;
 }
 
+#doctor{
+  color:black;
+}
+
+#specialty{
+  color:black;
+}
+
+#id{
+  color:black;
+}
+
+#questions{
+  color:black;
+}
+
 .start-page{
    border-top: 1px solid #54606e;
    background: #5891db;
