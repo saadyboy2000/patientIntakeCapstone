@@ -173,7 +173,7 @@ function retrieveForm() {
                 <input type="text" id="doctor" name="doctor" required value="${data.doctor}"><br>
                 <label>Specialty:</label><br>
                 <input type="text" id="specialty" name="specialty" value="${data.specialty}" required><br>
-                 <label>Max age intended:</label><br>
+                 <label>What is the age limit on this form?:</label><br>
                 <input type = "number" name="age" id="age" value="${data.id}"><br>
                 <label>Questions:</label><br>
                <textarea id = "questions" name = "questions" required>${data.questions}</textarea><br>
