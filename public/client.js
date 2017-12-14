@@ -157,7 +157,7 @@ function displayFormById() {
 function retrieveForm() {
     $('#forms').on('click', '#edit-button', function () {
          $('#createForm').removeClass("hide");
-        //$('#form-container').addClass('hide-display'); */
+        $('#form-container').addClass("hide");
         let idParameter = $(this).parent().find('.formID').val();
         $.ajax({
                 method: 'GET',
@@ -286,6 +286,8 @@ function handleUpdateForm() {
     $('#new-entry').on('click', '#update-button', function (e) {
         console.log("clicking on update");
         e.preventDefault();
+         $('#createForm').addClass("hide");
+        $('#form-container').removeClass("hide");
         updateForm();
     });
 }
