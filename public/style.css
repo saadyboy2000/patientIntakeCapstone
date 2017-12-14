@@ -23,14 +23,17 @@
 
 #doctor{
   color:black;
+  margin-bottom: 5px;
 }
 
 #specialty{
   color:black;
+  margin-bottom: 5px;
 }
 
 #id{
   color:black;
+  margin-bottom: 5px;
 }
 
 #questions{
