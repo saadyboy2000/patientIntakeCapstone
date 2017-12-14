@@ -79,7 +79,7 @@ function postNewForm() {
 //display all forms
 function displayForms() {
     $('.view-button').on('click', function () {
-        $('form-container').removeClass("hide-forms");
+        $('form-container').removeClass("hide");
         $('#createForm').addClass("hide");
     $.ajax({
             method: 'GET',
