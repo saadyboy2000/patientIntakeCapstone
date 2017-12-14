@@ -201,7 +201,7 @@ function updateForm() {
         'doctor': doctorInput,
         'specialty': specialtyInput,
         'questions': questionsInput,
-        'age' : ageInput
+        'id' : ageInput
     };
 
     let htmlOutput = "";
