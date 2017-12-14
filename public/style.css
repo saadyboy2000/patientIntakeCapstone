@@ -309,6 +309,40 @@ fieldset{
    background: #1b435e;
    }
 
+   #view-all{
+     border-top: 1px solid #54606e;
+   background: #5891db;
+   background: -webkit-gradient(linear, left top, left bottom, from(#452ade), to(#5891db));
+   background: -webkit-linear-gradient(top, #452ade, #5891db);
+   background: -moz-linear-gradient(top, #452ade, #5891db);
+   background: -ms-linear-gradient(top, #452ade, #5891db);
+   background: -o-linear-gradient(top, #452ade, #5891db);
+   padding: 6px 12px;
+   -webkit-border-radius: 28px;
+   -moz-border-radius: 28px;
+   border-radius: 28px;
+   -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
+   box-shadow: rgba(0,0,0,1) 0 1px 0;
+   text-shadow: rgba(0,0,0,.4) 0 1px 0;
+   color: white;
+   font-size: 12px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+
+   #view-all:hover{
+     border-top-color: #5d68ba;
+    background: #5d68ba;
+    color: #fffaff;
+   }
+
+   #view-all:active{
+    border-top-color: #1b435e;
+    background: #1b435e;
+   }
+
 .hidden-elements{
     display:none;
 }

@@ -55,7 +55,7 @@ function postNewForm() {
                 </div>
                 <button id="edit-button" class="nav-button">Edit</button>
                 <button id="delete-button" class="nav-button">Delete</button>
-                <button id="nav-view-button" class="view-button">View All</button>`;
+                <button id="view-all" class="view-button">View All</button>`;
 
 
              
