@@ -304,7 +304,7 @@ function navCreateButton() {
             <input type="text" id="doctor" name="doctor" required><br>
                 <label>Specialty:</label><br>
                 <input type="text" id="specialty" name="specialty" required><br>
-                <label>Max intended age:</label><br>
+                <label>What is the age limit on this form?:</label><br>
                  <input type="number" id="id" name="id" required><br>
                  <label>Questions:</label><br>
                 <textarea id = "questions" name = "questions" required></textarea><br>
