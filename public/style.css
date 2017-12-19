@@ -70,6 +70,7 @@
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
+   margin-bottom: 8px;
 }
 
 .start-page:hover {
@@ -227,9 +228,9 @@ fieldset{
    background: -ms-linear-gradient(top, #452ade, #5891db);
    background: -o-linear-gradient(top, #452ade, #5891db);
    padding: 6px 12px;
-   -webkit-border-radius: 14px;
-   -moz-border-radius: 14px;
-   border-radius: 14px;
+   -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
    -webkit-box-shadow: rgba(0,0,0,1) 0 1px 0;
    -moz-box-shadow: rgba(0,0,0,1) 0 1px 0;
    box-shadow: rgba(0,0,0,1) 0 1px 0;
