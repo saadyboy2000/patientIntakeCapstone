@@ -14,8 +14,16 @@
   color: white;
 }
 
-.background-image{
-  background-image: url("https://www.wikihow.com/images/thumb/3/31/Fill-out-an-FMLA-Form-Step-10.jpg/aid1709440-v4-728px-Fill-out-an-FMLA-Form-Step-10.jpg");
+.welcome-image{
+
+  position: relative;
+    float: left;
+    width:  60px;
+    height: 60px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+
    
 }
 
