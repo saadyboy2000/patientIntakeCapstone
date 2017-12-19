@@ -379,8 +379,18 @@ font-size: 120%;
 }
 
 .form-info{
-  margin-top: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
+
+.form-doctor{
+  margin-bottom: 10px ;
+}
+
+.form-specialty{
+  margin-bottom: 10px;
+}
+
 
 #new-submit-button{
   margin-top: 5px;
