@@ -96,10 +96,10 @@ function displayForms() {
             let formInput = data.map(function (forms, index) {
                 return `<div id="form-entries">
                         <input type="hidden" class="formID" value="${forms._id}">
-                        <p class="form-info">Doctor:</p> <p class="form-doctor">${forms.doctor}</p><br><br>
-                        <p class="form-info">Specialty:</p> <p class="form-specialty"> ${forms.specialty}</p><br><br>
-                        <div id="truncate"><p class="form-info">Max age intended:</p> <p class="form-question"> ${forms.id}</p></div><br><br>
-                        <div id="truncate"><p class="form-info">Questions:</p> <p class="form-question"> ${forms.questions}</p></div><br><br>
+                        <p class="form-info">Doctor:</p> <p class="form-doctor">${forms.doctor}</p><br>
+                        <p class="form-info">Specialty:</p> <p class="form-specialty"> ${forms.specialty}</p><br>
+                        <div id="truncate"><p class="form-info">Max age intended:</p> <p class="form-question"> ${forms.id}</p></div><br>
+                        <div id="truncate"><p class="form-info">Questions:</p> <p class="form-question"> ${forms.questions}</p></div><br>
                         <button id="edit-button" class="nav-button">Edit</button>
                         <button id="delete-button" class="nav-button" data-form-id="${forms._id}">Delete</button>
                         <button id="current-button" class="nav-button">View</button>
