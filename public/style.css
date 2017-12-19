@@ -17,7 +17,7 @@
 .welcome-image{
 
 text-align: center;
-  display:block;
+  display:inline-block;
   width: 5em;
   height: 5em;
  
