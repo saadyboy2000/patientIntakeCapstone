@@ -133,15 +133,15 @@
 .img{
  position: relative;
     float: left;
-    width:  250px;
-    height: 250px;
+    width:  300px;
+    height: 300px;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
 }
 
 .screenShotDesc{
-  font-size: 16px;
+  font-size: 22px;
 }
 
 body{
