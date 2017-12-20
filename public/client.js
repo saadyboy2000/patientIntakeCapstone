@@ -1,14 +1,7 @@
 let FORM_URL = '/forms';
 let NEW_FORM_URL = '/forms/new';
 
-/*function handleNewFormButton() {
-    $('#nav-create-button').on('click', function () {
-        
-        //$('#new-formEntry').removeClass('hide-display');
-        //$('.start-page').addClass('hide-display');
-    })
-}
-*/
+
 function startPage(){
     $('.start-page').on('click', function(){
         $('.welcome-screen').remove();
@@ -269,10 +262,7 @@ function deleteForm(idParameter) {
 
 
 function handleDisplayForms() {
-   // $('#forms').on('click', '#view-all-button', function () {
         displayForms();
-        //$('.current-form').addClass('hide-display');
-    //});
 }
 
 
@@ -320,29 +310,6 @@ function navCreateButton() {
 
 
 
-//When the user clicks on the button,
-//toggle between hiding and showing the dropdown content
-/*
-function showMenu() {
-    $('.dropbtn').click(function () {
-        console.log('clicked');
-        $('#myDropdown').toggle();
-    })
-};
-*/
-
-/*function hideMenu() {
-    //    $(document).click(function (e) {
-    //        if (e.target.class != 'drpbtn') {
-    //            $(".drpbtn").hide();
-    //        }
-    //    });
-    $('li').on('click', function () {
-        $('div#myDropdown').hide();
-    })
-};
-*/
-
 
 
 $(function () {
@@ -363,4 +330,3 @@ $(function () {
     //hideMenu();
 })
 
-//look at age vs id
