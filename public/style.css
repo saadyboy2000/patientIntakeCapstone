@@ -82,6 +82,7 @@ text-align: center;
    text-decoration: none;
    vertical-align: middle;
    margin-bottom: 8px;
+   cursor: pointer;
 }
 
 .start-page:hover {
@@ -126,6 +127,7 @@ text-align: center;
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
+   cursor: pointer;
 }
 
 .startpage:hover {
@@ -219,6 +221,7 @@ fieldset{
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
+   cursor: pointer;
    }
 .dropbtn:hover {
    border-top-color: #5d68ba;
@@ -251,6 +254,8 @@ fieldset{
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
+   cursor: pointer;
+   margin-bottom: 5px;
 }
 
 
@@ -275,6 +280,7 @@ fieldset{
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
+   cursor: pointer;
    }
 
    #nav-create-button{
@@ -298,6 +304,7 @@ fieldset{
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
+   cursor: pointer;
    }
 
    #nav-create-button:hover{
@@ -354,6 +361,7 @@ fieldset{
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
+   cursor: pointer;
    }
 
    #view-all:hover{
@@ -426,6 +434,7 @@ font-size: 120%;
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
+   cursor: pointer;
 }
 
 #update-button{
@@ -450,6 +459,7 @@ border-top: 1px solid #54606e;
    font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
    text-decoration: none;
    vertical-align: middle;
+   cursor: pointer;
 }
 
 #new-submit-button:hover{
